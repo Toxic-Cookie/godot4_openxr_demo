@@ -123,7 +123,7 @@ var _jump_cooldown := 0
 
 # Function to sort movement providers by order
 func sort_by_order(a, b) -> bool:
-	return true if a.order < b.order else false
+	return true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -190,11 +190,7 @@ func _physics_process(delta):
 	# - Request a jump
 	ground_control_velocity = Vector2.ZERO
 	var exclusive := false
-	for p in _movement_providers:
-		if p.enabled or p.is_active:
-			if p.physics_movement(delta, self):
-				exclusive = true
-				break
+
 
 	# If no controller has performed an exclusive-update then apply gravity and
 	# perform any ground-control

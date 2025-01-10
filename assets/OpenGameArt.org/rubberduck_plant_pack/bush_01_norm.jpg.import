@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/bush_01_norm.jpg-713b9e6d2667496c5903b7abcdd7
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
